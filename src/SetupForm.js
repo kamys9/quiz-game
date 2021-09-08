@@ -5,6 +5,9 @@ const SetupForm = () => {
   const { quiz, handleChange, handleSubmit, error } =
     useGlobalContext()
   return <main>
+    <div className='header'>
+      <h1 className="title">Geek Quiz</h1>
+    </div>
     <section className="quiz quiz-small">
       <form className='setup-form'>
         {/* amount */}
@@ -26,8 +29,9 @@ const SetupForm = () => {
           </label>
           <select name="category" id="category" className="form-input" value={quiz.category} onChange={handleChange}>
 
-            <option value="videogames">Video games</option>
-            <option value="boardgames">Board games</option>
+
+            <option value="videogames">Video Games</option>
+            <option value="boardgames">Board Games</option>
             <option value="computers">Computers</option>
             <option value="comics">Comics</option>
             <option value="gadgets">Gadgets</option>
@@ -64,6 +68,8 @@ const SetupForm = () => {
       </form>
     </section>
   </main>
+
+
 }
 
 export default SetupForm

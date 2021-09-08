@@ -2,7 +2,6 @@ import axios from 'axios'
 import React, { useState, useContext, useEffect } from 'react'
 
 const table = {
-
   videogames: 15,
   boardgames: 16,
   computers: 18,
@@ -31,7 +30,7 @@ const AppProvider = ({ children }) => {
   const [error, setError] = useState(false);
   const [quiz, setQuiz] = useState({
     amount: 10,
-    category: 'sports',
+    category: 'videogames',
     difficulty: 'easy'
   })
   const [isModalOpen, setIsModalOpen] = useState(false)

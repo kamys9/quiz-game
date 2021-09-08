@@ -30,7 +30,7 @@ function App() {
         correct answers: {correct}/{index}
       </p>
       <article className='container'>
-        <h2 dangerouslySetInnerHTML={{ __html: question }} />
+        <h2 className="question-text" dangerouslySetInnerHTML={{ __html: question }} />
         <div className="btn-container">
           {answers.map((answer, index) => {
             return <button key={index} className="answer-btn" onClick={() => checkAnswer(correct_answer === answer)}
